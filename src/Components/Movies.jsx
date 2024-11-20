@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { ProductContext } from "../Context/ProductContext.jsx";
 import MovieCard from "./MovieCard";
 import "../css/Movies.css";
-import Footer from "./footer";
+import Footer from "./Footer.jsx";
 
 const Movies = () => {
   const {
