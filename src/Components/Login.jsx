@@ -32,19 +32,30 @@ const Login = () => {
 
     const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
-    const user = storedUsers.find(
-      (user) =>
-        user.email === formData.email && user.password === formData.password
-    );
+    // const user = storedUsers.find(
+    //   (user) =>
+    //     user.email === formData.email && user.password === formData.password
+    // );
 
-    if (user) {
+    if (
+      formData.email === "user1@gmail.com" &&
+      formData.password === "password"
+    ) {
       setError("");
       setLogIn(true);
-      setCurrentUser({ ...currentUser, user });
       navigate("/");
     } else {
-      setError("Invalid email or password. Please try again.");
+      setError("Invalid credentials !");
     }
+
+    // if (user) {
+    //   setError("");
+    //   setLogIn(true);
+    //   setCurrentUser({ ...currentUser, user });
+    //   navigate("/");
+    // } else {
+    //   setError("Invalid email or password. Please try again.");
+    // }
   };
 
   const navigateToSignUp = () => {
