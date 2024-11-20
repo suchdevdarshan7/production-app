@@ -1,0 +1,139 @@
+.sign_main-container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    animation: loadPage 4s 1 ;
+}
+
+.sign_form{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+    height: 50rem;
+    width: 75rem;
+    background-color: white;
+    box-shadow: 0rem 0.4rem 3rem 0.4rem rgba(0, 0, 0, 0.274);
+    border-radius: 0.5rem;
+    animation: moveIn 3s 1;
+    
+}
+
+.inner_container{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+}
+
+.sign_input{
+    height: 4.5rem;
+    width: 28rem;
+    border: none;
+    box-shadow: 0rem 0.4rem 3rem 0.4rem rgba(0, 0, 0, 0.274);
+    padding-left: 1.2rem;
+    font-size:1.4rem;
+    letter-spacing: 1px;
+}
+
+.sign_input::placeholder{
+    font-size:1.4rem;
+}
+
+.sign_input:focus{
+    outline: none;
+    box-shadow: 0rem 0.4rem 4rem 0.4rem rgb(98, 255, 109);
+}
+
+.sign_input:focus.error{
+    box-shadow: 0px 3px 30px 10px red;
+}
+
+.btn-container_right{
+   text-align: start;
+}
+
+.btn-container_left{
+   text-align: end;
+}
+
+.relative_containers{
+    position: relative;
+}
+
+.logo{
+    
+    height:40px ;
+    width:30px;
+    position: absolute;
+    stroke: seagreen;
+    animation: opacityIn 4s 1;
+}
+
+.logo_confirm-password{
+    right:47rem;
+}
+
+.logo_password{  
+    right:0.4rem;
+}
+
+.logo_register{
+    right:60rem;
+}
+
+
+.login_btn-sign{
+    color: white;
+    height: 4rem;
+    width: 10rem;
+    border: none;
+    background-color: rgb(16, 189, 103);
+    font-size: 1.6rem;
+}
+
+@keyframes loadPage {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveIn{
+    from{
+        opacity: 0.6;
+        transform: translateX(10rem);
+
+    }
+    to{
+        opacity: 1; 
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes opacityIn {
+    from{
+        
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.error{
+    box-shadow: 0px 3px 30px 10px red;
+}
+
+.error_message{
+    margin-top: 0.5rem;
+    color: darkslategrey;
+}

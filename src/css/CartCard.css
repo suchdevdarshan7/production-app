@@ -1,0 +1,84 @@
+.cart_container>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.cart_container{
+    position: relative;
+}
+
+.cart_card{
+    display: flex;
+    gap:20px;
+    box-shadow: 0px 2px 40px 5px rgba(0,0,0,0.25);
+    padding:0.5rem;
+}
+
+.cart_img-container{
+    height: 200px;
+    width:250px;
+}
+
+img{
+    height: 100%;
+    width:100%;
+}
+
+.cart_card p{
+    width:50vw;
+    font-size:15px;
+}
+
+.cart_desc-container{
+    display: flex;
+    flex-direction: column;
+    gap:1.8rem;
+    justify-content: center;
+}
+
+.delete_btn{
+    color: white; 
+    background-color: red;
+    padding: 1rem 2rem;
+    border: none;
+}
+
+.back-btn{
+    position: absolute;
+    top:20px;
+    left:30px;
+    box-shadow:  0px 2px 30px 10px rgba(0,0,0,0.5);
+    display: flex;
+    gap:0.3rem;
+    padding:0.5rem;
+    border: none;
+    color: white; 
+    background-color: tomato;
+    font-size:18px;
+
+}
+
+.cart_header{
+    margin-top:20px;
+    height:60px;
+    
+    box-shadow: 0px 2px 40px 5px rgba(0,0,0,0.25);
+    width:60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:5px;
+}
+
+.cart_header--heading{
+    font-size:27px;
+}
+
+.cart_header_total{
+    color: red;
+    font-size:1.7rem;
+}
