@@ -5,7 +5,7 @@ import { ProductContext } from "../Context/ProductContext";
 const Footer = () => {
   return (
     <footer>
-      <p>This webpage is created by Darshan 😎</p>
+      <p>This webpage is created by Sam Joel 😎</p>
     </footer>
   );
 };
